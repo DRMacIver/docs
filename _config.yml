@@ -1,0 +1,9 @@
+title: The DRMacIver User Manual
+email: david@drmaciver.com
+baseurl: ""
+url: "https://docs.drmaciver.com" # the base hostname & protocol for your site
+twitter_username: DRMacIver
+github_username:  DRMacIver
+
+# Build settings
+markdown: kramdown
