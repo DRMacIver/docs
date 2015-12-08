@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Pancakes
-date: 2015-12-06 00:00:00
+date: 2015-12-08 22:58:00
 excerpt: My pancake recipe
 ---
 
