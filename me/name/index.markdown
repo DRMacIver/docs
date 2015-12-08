@@ -1,7 +1,7 @@
 ---
 layout: page
 title: My name
-permalink: /name/
+permalink: /me/name/
 date: 2015-12-08 11:53:00
 excerpt: Say my name
 ---
