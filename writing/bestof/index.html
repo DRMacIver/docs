@@ -1,0 +1,194 @@
+---
+layout: page
+date: 2016-01-11 00:00:00
+title: Things I have written
+---
+
+<p>
+  This is a transplant from my blog and is light on recent work. I'll try to update it more later.
+</p>
+
+<ul>
+<li><a href="#democracy">Democracy</a></li>
+<li><a href="#programming">Programming</a></li>
+<li><a href="#feminism">Feminism</a></li>
+<li><a href="#politics">Politics</a></li>
+<li><a href="#fiction">Fiction</a></li>
+<li><a href="#misc">Misc</a></li>
+</ul>
+<h3><a href="http://www.drmaciver.com/2011/04/a-perfect-voting-system/" name="democracy">A perfect voting system</a></h3>
+<p>At 14k visits (yes I know that&#8217;s not a lot), this is my most read article ever. It got linked from a bunch of places, including <a href="http://www.newscientist.com/blogs/shortsharpscience/2011/04/mathematicians-weigh-in-on-uk.html">one of the new scientist blogs</a>.</p>
+<p>Which really makes me wish it weren&#8217;t so badly written. In order to compensate for that <a title="Towards a more perfect democracy" href="http://www.drmaciver.com/2013/09/towards-a-more-perfect-democracy/">I rewrote it</a>. The new version is substantially better written but was so much less topical by then that it&#8217;s not had nearly the same level traffic.</p>
+<p>The essential idea, which I proposed mostly as a thought experiment, is that when electing a large number geographic constituencies the correct election procedure to use is random ballot &#8211; everyone votes, you pick a random voter and use their choice. I&#8217;ve since come around to thinking this is actually a really good idea, but alas it will never get implemented.</p>
+<p>I&#8217;ve written more on this subject since:</p>
+<ul>
+<li><a href="http://www.drmaciver.com/2013/02/an-election-protocol-for-implementing-random-ballot-in-an-accountable-manner/">An implementation strategy which is hard to game</a></li>
+<li><a href="http://www.drmaciver.com/2013/02/5048/">Some additional reasons why I think it&#8217;s a good idea</a></li>
+<li><a href="http://www.drmaciver.com/2013/04/deterministic-voting-is-just-too-random/">On why using deterministic methods for voting is just too random</a></li>
+<li><a href="http://www.drmaciver.com/2013/04/the-winning-strategy-for-random-ballot-is-not-what-i-thought-it-was/">More on how to win a majority under random ballot</a> (spoiler: You do it by having a majority of the votes, or near enough as makes no difference, but how to optimise your chances of getting a larger number of seats depends on how close to a majority you have)</li>
+<li><a href="http://www.drmaciver.com/2013/02/so-i-accidentally-designed-a-voting-system/">A variation for multi-member constituencies</a>, (which <a title="Revisiting an old voting system design" href="http://www.drmaciver.com/2014/01/revisiting-an-old-voting-system-design/">retains proportionality but allows tactical voting</a>)</li>
+</ul>
+<h3><a href="http://www.drmaciver.com/2011/04/a-less-perfect-system-for-which-i-will-nevertheless-be-voting/">A less perfect system for which I will nevertheless be voting</a></h3>
+<p>I got very vocal and angry about the AV referendum. This is in fact what prompted the random ballot post. I had recently written Hammer Principle and so gone down a bit of a rabbit hole of voting theory. As a result it was really obvious to me how <em>bad</em> the existing system was. The fact that the no to AV group were lying through their teeth helped fuel my outrage.</p>
+<p>I&#8217;ve since written various things both on the practical details of the vote in the UK and on voting theory at large:</p>
+<ul>
+<li><a href="http://www.drmaciver.com/2013/04/percentages-of-the-popular-vote-in-uk-elections/">An elected UK government has not had the popular vote since 1931</a></li>
+<li><a href="http://www.drmaciver.com/2011/04/how-to-turn-av-into-a-condorcet-system/">AV may not be Condorcet but you can easily make it so</a></li>
+<li><a href="http://www.drmaciver.com/2013/04/a-proposal-for-electoral-reform-2/">A proposal for electoral reform</a>: Don&#8217;t make every constituency use the same system. Instead regulate the set of allowed systems and create a process for changing it.</li>
+<li><a href="http://www.drmaciver.com/2010/07/irrelevant-alternatives-arent/">Irrelevant alternatives aren&#8217;t</a>. An example demonstrating that Arrow&#8217;s theorem shouldn&#8217;t be considered all that significant a problem for preferential voting. As it happens I&#8217;m no longer convinced preferential voting is a good idea, but Arrow isn&#8217;t the reason for that.</li>
+</ul>
+<h3><a href="http://www.drmaciver.com/2008/06/scala-arrays/" name="programming">Understanding Scala Arrays</a></h3>
+<p>I stopped using Scala long ago, and this article is no longer relevant to the current implementation, which I believe uses an explicit manifest object and is much more reliable. This was my description of the old mechanism where arrays could be backed by either an object array or a primitive array and what would happen was essentially that when you realised it as a primitive array the implementation would &#8220;snap&#8221; to that form. It was a very clever but ultimately quite flaky way of getting around the limitations of the JVM for generics.</p>
+<p>The reason it&#8217;s got quite so much traffic over the years is that <a href="http://docs.scala-lang.org/sips/completed/scala-2-8-arrays.html">it&#8217;s linked from the proposal for the fixed array</a> implementation that came in in 2.8.</p>
+<p>Some other &#8220;Here&#8217;s how this bit of Scala works&#8221; posts:</p>
+<ul>
+<li><a href="http://www.drmaciver.com/2009/07/how-packages-work-in-scala/">How packages work in Scala</a>. This is the old system. I still think it was a good system in itself, but unfortunately it was completely shafted by the combination of the Java conventions and the way package resolution from the file system worked.</li>
+<li><a href="http://www.drmaciver.com/2009/04/scala-trivia-of-the-day-traits-can-extend-classes/">A note on a useful feature of the Scala class system</a> that most people seemed to miss. I believe this one to still be valid.</li>
+<li><a href="http://www.drmaciver.com/2008/03/an-introduction-to-implicit-arguments/">An introduction to implicit arguments</a>. There are very few programming languages so bad that they have nothing to recommend them (Scala is pretty far from being one), so as a result pretty much every language I&#8217;ve ever used has features I miss when I&#8217;m not using it. Scala has a few of them, but implicit arguments unquestionably top the list. This is my attempt to write an introduction with lots of an examples on how to use them. I believe it to still be accurate &#8211; certainly it still gets linked from places and gets some traffic, so I <em>hope</em> its&#8217; still accurate.</li>
+<li><a href="http://www.drmaciver.com/2008/01/minor-revelation-about-scala-existential-types/">A little detail</a> on the difference between Java wildcards and Scala existential types.</li>
+<li><a href="http://www.drmaciver.com/2008/03/existential-types-in-scala/">A more substantiative post</a> about Scala existential types work. This seems likely to still be mostly accurate but I don&#8217;t know if it&#8217;s still 100%. It&#8217;s certainly still quite popular.</li>
+<li><a href="http://www.drmaciver.com/2008/04/object-main-extends-application-considered-harmful/">Once upon a time there was a Scala trait called Application which broke everything</a>. You ended up running your entire application inside class initialization. This turns out to be a really bad idea on the JVM. I believe this was fixed by introducing deferred initialization rather than by removing Application.</li>
+</ul>
+<p>Other posts from the Scala years:</p>
+<ul>
+<li><a href="http://www.drmaciver.com/2007/12/no-seriously-why-scala/">No, seriously, why scala</a>? An attempt at a pro-Scala advocacy piece that was a little more interesting than the standard &#8220;zomg functional programming is amazing!!1&#8221; fluff pieces</li>
+<li><a href="http://www.drmaciver.com/2008/01/why-not-scala/">Why not Scala</a>? A post on its downsides. Obviously some of these have now changed. I could write an updated piece, but I&#8217;m not going to. Someone who actually still uses the language is far better placed to complain about it.</li>
+<li><a href="http://www.drmaciver.com/2009/02/how-do-you-talk-about-scala/">How do you talk about Scala</a>? In which I asked people about how they sold other programmers on Scala.</li>
+</ul>
+<h3><a href="http://www.drmaciver.com/2010/01/understanding-timsort-1adaptive-mergesort/">Understanding Timsort, Part 1: Adaptive Mergesort</a></h3>
+<p>One of my more read articles, mostly because it&#8217;s linked from the <a href="http://en.wikipedia.org/wiki/Timsort">Wikipedia page on Timsort</a> (not my doing, I promise).</p>
+<p>I unfortunately never followed up with a part 2. I got about a third of one written before it got stuck in the eternal drafts folder of doom but decided not to bother &#8211; I got further with my understanding (although I certainly couldn&#8217;t recite all the details off from memory) but then realised I wasn&#8217;t all that interested in learning the details of the sorting algorithm.</p>
+<h3><a href="http://www.drmaciver.com/2013/03/a-manifesto-for-error-reporting/">A manifesto for error reporting</a></h3>
+<p>This was part of the storm of activity I had at the beginning of this year. I think I had three popular articles going in a week (and yet unlike last week HN didn&#8217;t bring my site down once. Oops). I forget what triggered this. I think it might have been the way <a href="http://www.padrinorb.com/">Padrino</a> handled certain problems, but really it could have been anything Ruby related. Basically: People who handle and report errors often seem to go out of their way to make things difficult to debug. This makes me sad and angry and you, the reader, thus get to listen to me being sad and angry. Apparently this sad angriness (sandgriness?) struck a chord with a lot of other people.</p>
+<p>I also published <a href="http://www.drmaciver.com/2013/03/a-rewritten-manifesto-for-error-reporting/">A rewritten version of the manifesto </a>because some people misunderstood the first one. There&#8217;s less shouting and more condescending prescriptivism. A friend described it as &#8220;the most passive aggressive thing she&#8217;d ever read&#8221; because of how obviously pissed off I was and yet going out of my way to be scrupulously polite in it. This is almost as popular as the inspiring post.</p>
+<p>Relatedly, I appear to have strong opinions on exceptions:</p>
+<ul>
+<li><a href="http://www.drmaciver.com/2010/04/the-best-way-to-handle-exceptions/">The best way to handle exceptions</a>. TLDR, don&#8217;t. If you don&#8217;t know what to do with the exception, don&#8217;t try to do anything with it. Let it bubble up to the top and let the code you have for handling crashes (which should either be empty because the language default is good or solid and essential) handle it.</li>
+<li>And mostly unrelated but it doesn&#8217;t fit anywhere else and I still think it&#8217;s important: <a href="http://www.drmaciver.com/2009/03/exceptions-for-control-flow-considered-perfectly-acceptable-thanks-very-much/">It&#8217;s <em>totally OK</em> to use exceptions for things other than error reporting</a>.</li>
+<li><a href="http://www.drmaciver.com/2011/05/on-the-value-of-helpful-error-messages/">An example where someone else providing debugging heuristics in error reporting saved my bacon</a>.</li>
+<li><a href="http://www.drmaciver.com/2013/07/a-case-study-in-bad-error-messages/">Complaining about how bad the python standard library error messages are</a></li>
+</ul>
+<h3><a href="http://www.drmaciver.com/2013/08/how-did-you-get-started-so-quickly/">How to quickly become effective when joining a new company</a></h3>
+<p>(original title: How did you get started so quickly?)</p>
+<p>A rather recent post, so if you&#8217;re reading this archive post close to when I wrote it you&#8217;ve probably already read it. This post had the surprising characteristic of being remarkable well received on hacker news and derided on reddit. Clearly this means that Hacker News are better people than Reddit. Um.</p>
+<p>This starts out with some practical advice on the philosophy of learning and rapidly descends into some very speculative things about mental models and how to apply them. I actually have more of the mental models stuff to come which I&#8217;m currently procrastinating from by writing this post instead. Such is life.</p>
+<p>I&#8217;ve written<a title="Reading code by asking questions" href="http://www.drmaciver.com/2014/01/reading-code-by-asking-questions/"> a follow on post about how to apply this technique as a way of reading code</a>.</p>
+<p>In general I care quite a lot about the art of problem solving and how it&#8217;s applied to software development, and I have a few other posts on that subject:</p>
+<ul>
+<li><a href="http://www.drmaciver.com/2013/03/what-the-fuck-are-we-doing/">A parable about problem solving in software development</a>. Original title: &#8220;What the fuck are we doing?&#8221;. This is what happens if you let problem solving run unconstrained and don&#8217;t ground it in actual problems worth solving. I&#8217;ve also done a <a href="http://www.drmaciver.com/audio_posts/parable.ogg">spoken version of this</a>.</li>
+<li>The unconstrained problem solving is particularly ironic given that I already <em>knew</em> this lesson, having written about it previously under &#8220;<a href="http://www.drmaciver.com/2009/06/lessons-learned-are-you-solving-the-right-problem/">Are you solving the right problem?</a>&#8220;</li>
+<li><a href="http://www.drmaciver.com/2013/06/problem-solving-when-you-cant-handle-the-truth/">Problem solving when you can&#8217;t handle the truth</a> isn&#8217;t about software development at all. It is about a useful advanced problem solving technique though.</li>
+<li>A <a href="http://www.drmaciver.com/2013/03/a-heuristic-for-problem-solving/">probably useless mathematical heuristic for problem solving</a>. The maths might be useful or not, I&#8217;m not sure, but I think the overall idea it&#8217;s aiming for is useful: Run experiments which maximize the rate at which you gain information.</li>
+<li><a href="http://www.drmaciver.com/2014/01/different-types-of-overheads-in-software-projects/">A tool for thinking about how the effort required to develop software depends on you r methodology</a>.</li>
+</ul>
+<h3><a href="http://www.drmaciver.com/2012/05/openvpn-repeatedly-losing-connections-with-inactivity-timeout/">OpenVPN repeatedly losing connections with inactivity timeout</a></h3>
+<p>You have no need to read this post. I practically guarantee it. If you&#8217;re not experiencing this problem then you don&#8217;t care. If you are experiencing this problem then you&#8217;ve probably found this page due to my advanced SEO skills (read: I struggled for ages to find anyone explaining what in the actual was going on, couldn&#8217;t find anything, so when I figured it out made sure that other people would not suffer this problem). This still gets a lot of traffic and every now and then someone will give me warm fuzzies by saying &#8220;Thanks! This completely solved a really annoying problem for me&#8221;.</p>
+<p>Another example of my doing this that you don&#8217;t really care about is my <a href="http://www.drmaciver.com/2013/06/problems-with-linux-wifi-on-an-intel-network-card/">posts</a> on <a href="http://www.drmaciver.com/2013/06/more-linux-wifi-hilarity/">Linux wifi </a>recently. Unfortunately those are less helpful because I haven&#8217;t actually solved the problem (I still haven&#8217;t. I&#8217;ve avoided it with a £15 wifi dongle).</p>
+<h3><a href="http://www.drmaciver.com/2009/01/writing-things-right/">Writing things right</a></h3>
+<p>This was a surprisingly popular article about a cute hack you can do in Haskell. I totally stole it from someone else at the time but was never able to figure out who I stole it from (I think it was someone on some mailing list). Basically: You can mess with Haskell syntax to make it look almost exactly like an OO language with surprisingly little difficulty.</p>
+<p>This is part of what I think of as &#8220;The programming language years&#8221;. I still care about programming languages and like picking up new ones (it&#8217;s pretty easy using the &#8220;How did you get started so quickly?&#8221; guide, though knowing a variety of them already definitely helps with that). But once upon a time I was really quite obsessed with languages and thought that solving them was the key to a lot of software development&#8217;s problems. These days I think <em>not being so completely dysfunctional </em>is the key to solving a lot of software development&#8217;s problems and that most of our problems are social. I miss the days when I thought it was about programming languages. Those were nice, cuddly, delusions.</p>
+<p>Other things from the programming language years:</p>
+<ul>
+<li><a href="http://www.drmaciver.com/2008/02/tell-us-why-your-language-sucks/">Tell us why your language sucks</a>. The thesis is that all languages suck in one way or another, and most criticisms of languages are shallow because they come from people who don&#8217;t use that language. This was an opportunity for people to complain about the languages they actually use and like. I think it went pretty well.</li>
+<li><a href="http://www.drmaciver.com/2009/01/criticizing-programming-languages/">Criticizing programming languages</a>. Me deliberately saying some good and bad things about different languages I used. Some of these are quite shallow (e.g. I could probably say more interesting things about python now), some of them are pretty fair.</li>
+<li><a href="http://www.drmaciver.com/2008/08/functional-code-not-equal-good-code/">Functional code != Good code</a>. This might actually be an early sign of my disillusionment. A post that spells out in detail the seemingly obvious point that making your code more functional doesn&#8217;t automatically make it better and that what you actually need is better factoring and more modularity.</li>
+<li><a href="http://www.drmaciver.com/2007/05/functional-programming-lies/">Functional programming lies</a>. AKA &#8220;Please engage in truth-based advocacy, thanks&#8221;.</li>
+<li><a href="http://www.drmaciver.com/2009/05/a-problem-of-language/">A problem of language</a>.  What do we actually mean when we say &#8220;This is a functional programming language&#8221;? Draws the distinction between &#8220;This thing exhibits X behaviours&#8221; and &#8220;This is an X thing&#8221;, which I think is important and undervalued. I keep meaning to write another post on a similar subject in a different context.</li>
+<li><a href="http://www.drmaciver.com/2009/06/axioms-definitions-and-agreement/">I later elaborated</a> on how you don&#8217;t actually need definitions to seek agreement.</li>
+<li><a href="http://www.drmaciver.com/2011/11/notes-on-design-of-a-haskell-api/">Notes on the design of a Haskell API</a>. Some problems I had when trying to design a metric space API in Haskell.</li>
+<li><a href="http://www.drmaciver.com/2007/05/whats-a-monad/">What&#8217;s a monad?</a> So, yeah, I&#8217;ve written a monad tutorial. I&#8217;m not proud of this.</li>
+<li>Then<a href="http://www.drmaciver.com/2012/12/so-i-accidentally-wrote-a-monad-tutorial/"> I accidentally wrote another one</a>.</li>
+<li><a href="http://www.drmaciver.com/2009/05/interest-bandwidth/">Interest bandwidth</a>. The theory that interest in programming languages is strongly correlated to lack of interest in what you&#8217;re doing with them. This was my theory at the time for my waning interest in the subject. I think it was true but incomplete.</li>
+</ul>
+<p>A more recent thing which isn&#8217;t from the programming years but fits into a similar category is <a title="How learning Scala made me a better programmer" href="http://www.drmaciver.com/2013/09/how-learning-scala-made-me-a-better-programmer/">How learning Scala made me a better programmer</a>, in which I reflect on the fact that writing code in a language with a buggy compiler is surprisingly useful.</p>
+<h3><a href="http://www.drmaciver.com/2012/11/committing-to-calling-out-sexism/" name="feminism">Commiting to calling out sexism</a></h3>
+<p>This was a bit of a transition point for me. The actual post itself is not that phenomenal, but it marks the point where I started writing about feminism and related issues and started being more vocal about them, both online and in person. I&#8217;d been what I suppose you might call a closet feminist before that &#8211; it&#8217;s not that I was secret about my feminism, but I didn&#8217;t make a big deal of it. This was the point at which I realised that this was not OK and that I needed to start getting on with helping make the world a slightly less shit place.</p>
+<p>Annoyingly I haven&#8217;t actually done all that much explicit calling out of sexism recently (I&#8217;ve corrected some people on various things, but it was more of a &#8220;Hey, actually the world works like this&#8221; &#8220;oh, ok&#8221; scenario than &#8220;Hey you&#8217;re being sexist. Can you stop?&#8221;). I <em>think</em> this is mostly because I haven&#8217;t been in situations where it was necessary, but I&#8217;m not sure why that is and I think I&#8217;ll keep an eye on this.</p>
+<p>I have done a certain amount of shouting on twitter on the subject, and I&#8217;ve definitely been a bit more vocal on the subject in casual conversation, but I&#8217;m not sure how substantial that&#8217;s really been.</p>
+<p>I also promised at the time to try and document this. Again, failure. The only documented case of it was relatively near the beginning with <a href="http://www.drmaciver.com/2012/12/if-programming-language-articles-were-people/">if programming language articles were people</a>. A workplace incident in which someone forward around a &#8220;If programming languages were women&#8221; post. I was not amused.</p>
+<p>A more recent example is my <a title="I am angry too" href="http://www.drmaciver.com/2013/09/i-am-angry-too/">I am angry too</a> piece, in which I write about men&#8217;s tendency to dismiss women&#8217;s anger as a way to avoid hearing about things that make us uncomfortable.</p>
+<p><a href="http://www.drmaciver.com/2013/02/a-discussion-on-free-time-and-hiring-and-employment-practices/">This discussion around hiring practices</a> maybe also counts. I think I might be reaching though.</p>
+<p>I do have a bunch of posts about identity, which are clearly inspired by a lot of thoughts around intersectional feminism. I don&#8217;t know if I would call them explicitly feminist, but I think that&#8217;s clearly where I&#8217;m coming from:</p>
+<ul>
+<li><a href="http://www.drmaciver.com/2013/04/some-ill-thought-out-musings-abou-identity-2/">I believe I can fly</a>. Some thoughts about what we consider part of our identity and how these may not correspond to &#8220;objective&#8221; reality. I&#8217;m clearly on the fence on the subject (and remain so) but as a result people from both sides basically went &#8220;Yes exactly! This completely supports my point!&#8221; about it. I still think it&#8217;s an interesting exploration though.</li>
+<li><a href="http://www.drmaciver.com/2013/07/you-are-not-your-labels/">You are not your labels</a>. A post about the difference between your identity and the words you use to describe your identity, especially in the context of sexuality. In it I attempt to explain everything ever by the failure to understand the difference between these two. This had an interesting split in its reactions. People who knew me received it mostly positively (they didn&#8217;t necessarily <em>agree</em>, but they thought it was an interesting point). People who didn&#8217;t know me so well were&#8230; more mixed. Apparently a mostly-straight cis white dude who works in tech gets pattern matched to some relatively unpleasant behaviours when talking about identity. Not all that surprising and hard to blame people for.</li>
+<li><a href="http://www.drmaciver.com/2013/08/more-on-labels-and-identity/">So I wrote a follow up post </a>in which I made it fairly explicit that I wasn&#8217;t saying that identity wasn&#8217;t important.</li>
+</ul>
+<h3><a href="http://www.drmaciver.com/2014/02/how-to-write-good-software/">How to write good software</a></h3>
+<p>In which I outline my three step program for writing better software. It approximately goes:</p>
+<ol>
+<li>Smash the system</li>
+<li>Smash the patriarchy</li>
+<li>Figure out how to write good software</li>
+</ol>
+<p>It&#8217;s proven to be fairly popular, I think mostly because people who are interested in both social justice and software are extremely keen to share it.</p>
+<h3><a href="http://www.drmaciver.com/2012/12/ignorance-is-bliss-for-whom/">Ignorance is bliss for whom?</a></h3>
+<p>Also on a more or less feminist topic. Basically: Knowing more can make your life worse. The reason for this is not that knowing more is harmful it&#8217;s that your life was currently &#8220;better&#8221; because you were less aware that you were causing problems for other people.</p>
+<p>Related are:</p>
+<ul>
+<li><a href="http://www.drmaciver.com/2013/05/a-sketchy-and-overly-simplistic-theory-of-moral-change/">an (overly simplistic) theory of moral change</a>. I don&#8217;t think thought experiments about trolleys are a good way to explore normative theories of morality. What is?</li>
+<li><a href="http://www.drmaciver.com/2013/05/moral-argument-for-rationality/">The moral argument for rationality</a></li>
+</ul>
+<h3><a href="http://www.drmaciver.com/2013/02/questions-for-prospective-employers/">Questions for prospective employers</a></h3>
+<p>A distilled list of questions to ask companies before joining. I did ask all of these at my current employer, but I confess I didn&#8217;t guide my decision by these as thoroughly as I might have. To be honest, I completely failed to stick to my guns. Next time, whenever that is, I will do better.</p>
+<p>Also, <a href="http://www.drmaciver.com/2013/02/interviewing-companies/">the long list from which the short list was distilled</a>.</p>
+<h3><a href="http://www.drmaciver.com/2013/06/a-manifesto/" name="politics">A manifesto for what I will do when I take over the country</a></h3>
+<p>(And the world)</p>
+<p>Also in this series:</p>
+<ul>
+<li>Some earlier thoughts on <a href="http://www.drmaciver.com/2011/06/the-world-as-i-would-make-it/">how I would shape the world to my whim</a></li>
+<li><a href="http://www.drmaciver.com/2011/06/world-whim-etc-part-2/">More thoughts on this</a></li>
+<li><a href="http://www.drmaciver.com/2012/05/greetings-from-the-ministery-for-dancing-getting-high-and-fucking/">Greetings from the ministry of dancing, getting high and fucking</a>. Not actually my idea, though I think it contains some good ones. A challenge was set to provide concrete policy proposals for such a ministry, so I provided some.</li>
+</ul>
+<h3><a href="http://www.drmaciver.com/2013/05/how-to-legally-and-efficiently-bribe-a-democracy/">How to legally(?) and efficiently bribe a democracy</a></h3>
+<p>I&#8217;m pretty disillusioned with the state of modern democracy, which meant I was very receptive when Terence Edent gave a talk about how to effect real political change: By bribing MPs, because they turn out to be really quite cheap. This then collided with my peculiar obsession with randomisation and came up with this model for bribing MPs without directly bribing MPs. I then came up with <a href="http://www.drmaciver.com/2013/05/another-model-for-bribing-mps/">another one</a>.</p>
+<h3><a name="fiction"></a>Fiction</h3>
+<p>I sometimes write fiction. I&#8217;m not actually very good at it (mainly due to being unable to write good dialogue) but sometimes it turns out well anyway (mainly due to being able to avoid needing to write dialogue). Notable examples:</p>
+<ul>
+<li><a href="http://www.drmaciver.com/2009/04/gates/">Gates</a> &#8211; a story being told to you in a bar</li>
+<li><a href="http://www.drmaciver.com/2009/02/spam/">Spam</a> &#8211; my contribution to the rare genre of post-singularity humour</li>
+<li><a href="http://www.drmaciver.com/2008/07/they-called-me-mad/">They called me mad</a> &#8211; secret agent vs mad scientist. Contains actual dialogue. Also contains my favourite line from any of the fiction I have written.</li>
+</ul>
+<p>Less notable but still decent examples:</p>
+<ul>
+<li><a href="http://www.drmaciver.com/2010/03/dark-lord/">Dark Lord</a> &#8211; a hero rises to defeat the dark lord. Unfortunately the dark lord was already defeated with high explosives.</li>
+<li><a href="http://www.drmaciver.com/2014/04/the-man-who-named-the-stars/">The man who named the stars</a> &#8211; a vaguely lord Dunsany inspired fairy tail / creation myth..</li>
+</ul>
+<h3><a href="http://www.drmaciver.com/2013/04/a-freemium-model-for-scheduling/" name="misc">A freemium model for scheduling</a></h3>
+<p>This was actually inspired by my world domination ideas for health care systems.</p>
+<p>It&#8217;s an interesting way to do a business model: Give the service away for free, but dedicate a certain percentage of resources to the people who pay you the most, with people being able to pay as much or as little as they like to get access to this (and the amount of access you get scaling with the amount of money you&#8217;ve paid (plus some bonuses for regular customers). It has some problems, some of which I <a href="http://www.drmaciver.com/2013/04/a-bugfix-for-my-queuing-busines-model/">later patched</a>.</p>
+<h3><a href="http://www.drmaciver.com/2013/05/on-vegetarians-who-eat-chicken/">On vegetarians who eat chicken</a></h3>
+<p>A practical and linguistic defence of people who describe themselves as &#8220;Vegetarian but I eat chicken&#8221; against people who immediately go &#8220;Well you&#8217;re not vegetarian then, are you?!&#8221; in a self-righteous &#8220;Gotcha!&#8221;. I get a surprising amount of Google traffic for this post.</p>
+<h3><a href="http://www.drmaciver.com/2013/05/some-simple-theorems-about-dominance-of-probability-distributions/">Some simple theorems about dominance of probability distributions</a></h3>
+<p>I spent a little bit of time looking at the question of when one real valued random variable is &#8220;better&#8221; than another, where a higher score is always better but we&#8217;re not sure about the distributions. I gave a nice definition of the minimal possible partial order we accept has to be included in this and explored some of its properties.</p>
+<p>I <a href="http://www.drmaciver.com/2013/05/a-theorem-on-dominance-of-random-variables/">later proved</a> that this was equivalent to the nice characterisation that one distribution dominated another iff it had greater or equal expectation under every monotonic increasing transformation.</p>
+<p>I also <a href="http://www.drmaciver.com/2013/05/when-does-one-normal-distribution-dominate-another/">characterised this for normal distributions</a>. In short, a normal distribution dominates another iff it has greater or equal mean and the same variance. Normal distributions with distinct variances are incomparable under this order.</p>
+<h3><a href="http://www.drmaciver.com/2013/05/a-theorem-about-certain-families-of-random-variables/">Studying a certain notion of &#8220;decision strategy&#8221;</a></h3>
+<p>I defined a thing I called a subset consistent decision strategy. I provided a full characterisation of all finite ones, and then did some work on characterising infinite ones:</p>
+<ul>
+<li><a href="http://www.drmaciver.com/2013/05/an-infinitary-extension-to-the-previous-theorem-about-random-variables/">The countable version looks very like the finite version</a></li>
+<li><a href="http://www.drmaciver.com/2013/05/more-on-infinitary-decision-strategies/">The uncountable version is a lot more complicated</a></li>
+</ul>
+<h3><a href="http://www.drmaciver.com/2013/09/how-to-get-free-tea-from-pret-a-manger/">How to get free tea from pret a manger</a></h3>
+<p>One of various &#8220;isn&#8217;t my life interesting?&#8221; amusing stories. Occasionally funny things happen to me and I blog about them. These tend to be surprisingly well received, although never get that much traffic. Other examples include:</p>
+<ul>
+<li><a href="http://www.drmaciver.com/2009/08/how-to-start-the-week/">That day where I had a cold shower then interrupted a funeral procession</a></li>
+<li><a title="Coinpocalypse" href="http://www.drmaciver.com/2014/01/coinpocalypse/">When I accidentally found myself with a pile of 40 £1 coins.</a></li>
+</ul>
+<h3><a href="http://www.drmaciver.com/2013/06/customers-who-read-this-blog-might-also-like/">Customers who read this blog might also like&#8230;</a></h3>
+<p>As if the 80-some links that I&#8217;m already providing in this post weren&#8217;t enough, here&#8217;s a whole bunch of book recommendations.</p>
+<p>I also have <a href="http://www.drmaciver.com/2013/07/some-webcomic-recommendations/">a similar post for webcomics</a>.</p>
+<h3>Miscellaneous</h3>
+<p>I have no idea where else to put these but think they&#8217;re worth reading</p>
+<ul>
+<li><a href="http://www.drmaciver.com/2013/09/warning-this-blog-has-secret-mind-control-powers/">In which I explain how this blog is an insidious ploy to take over your mind and replace it with a copy of my own</a>. Despite telling you how the trick is done, it works anyway.</li>
+<li><a href="http://www.drmaciver.com/2013/04/a-magic-system-with-consistency-and-depth/">When I designed a magic system for a fantasy universe</a>. It&#8217;s designed to strike a nice balance between what I perceive as two extremes. It&#8217;s very post-modern reality-is-what-we-make-it but I still rather like it.</li>
+<li>I may be an atheist, but I have a religion of sorts. It&#8217;s called <a href="http://www.drmaciver.com/2013/05/come-join-the-cult-of-the-giant-global-brain-2/">The Cult Of The Giant Global Brain</a>. Come join us. We have cookies.</li>
+<li><a href="http://www.drmaciver.com/2010/07/the-role-of-a-cto/">The role of a CTO</a>. A conversation about how CTOs work.</li>
+<li><a href="http://www.drmaciver.com/2012/04/feeling-tired-you-should-read-this/">A reminder that you&#8217;re not supposed to feel tired all the time and it may be a sign that you should talk to a doctor</a></li>
+<li><a href="http://www.drmaciver.com/2013/03/nontransitive-dice-are-unsurprising/">Why you should expect non-transitive dice to exist if you know much about voting theory</a></li>
+<li><a href="http://www.drmaciver.com/2013/06/an-amusing-financial-instrument-for-creating-a-common-currency/">An amusing idea for creating a common currency as a financial instrument which anyone can back</a></li>
+</ul>
+<p>That&#8217;s it for now. I&#8217;ve missed out the cooking and fiction sections entirely, and I suspect there&#8217;s some interesting stuff lurking in the early days of my archive, but the process of curating this is exhausting. I may come back to it later, but I don&#8217;t have a good track record of doing that.</p>
+</div> 
+
