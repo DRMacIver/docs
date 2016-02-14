@@ -7,25 +7,21 @@ title: How to quickly become effective
 In general I seem to be unusually good at getting started in a new job. This piece is an outline
 on how I go about doing that.
 
+The essential goal is to treat this as a *learning* problem, and to solve it through learning by doing. This results in both my learning more rapidly but also in my getting things done almost immediately because of how I focus my learning process.
+
 There are essentially three key principles I apply, all about information:
 
-1. Acquire as little information as possible
-2. Acquire information as efficiently as possible
-3. Use the information you acquire as effectively as possible
+1. Avoid acquiring information you don't need
+2. Acquire information efficiently
+3. Use the information you acquire well
 
 I’ll elaborate on each of these and how to do them.
 
-## Acquire as little information as possible
+## Avoid acquiring information you don't need
 
-This one is the only one that might be counter-intuitive. The others… well, yes. You want to acquire information efficiently and use it effectively. That’s kinda what learning quickly means. But acquiring as little information as possible? What’s that about? Surely when trying to learn stuff you want to acquire as much information as possible, right?
+For the purpose of this piece, learning is only useful when it allows you to get things done. Filling your brain with information is all very well, but without grounding it in practical things you're trying to get done it becomes somewhat purposeless knowledge.
 
-Wrong.
-
-This sort of thinking fundamentally misunderstand the purpose of learning, at least in this context.
-
-Learning is only useful when it allows you to get things done. Filling your brain with information is all very well, but what if you’ve filled your brain with entirely the wrong information?
-
-Work example (a hypothetical one. I’ve not seen this happen, though I have seen similar): Suppose you diligently sit down, trace through the database schema, learning how everything fits together. You spend about a week doing this. Then you get told that that’s the old schema and we’re 2/3rds of the way through migrating to an entirely new data storage system after which that schema will be retired. Now the knowledge of the history isn’t entirely useless, but there’s certainly more useful things you could have been doing with that week.
+There are cases where you *do* need to dump a great deal of information into your brain before you can usefully get started, but most jobs are not one of those cases and you'll learn better by not trying.
 
 The goal of learning as little information as possible forces you to do three important things:
 
@@ -33,39 +29,29 @@ The goal of learning as little information as possible forces you to do three im
 * It forces you to do things you can actually achieve soon. If task A would require you to learn a lot and task B would require you to learn a little, do task B. It will take you less time to learn the prerequisites, so you’ll get something achieved quickly.
 * It prevents you from getting distracted by the immensity of the task of trying to understand everything and forces a more useful learning discipline on you by giving you concrete places to start.
 
-“But David!”, I hear you cry in horror so profound that it causes you to use exclamation marks as commas, “Are you suggesting that learning is bad? That I shouldn’t try to learn how things work?”
+That's not to say that acquiring information is *bad*. All else being equal, more information is better than less information. But acquiring information is *expensive*, so it's important to prioritise.
 
-Rest your mind and set aside your fears, for I am not!
+Additionally, prioritising like this actually helps you acquire more information in the long run. The thing about information is that once you have acquired it you can build on it. Every little bit of knowledge you put into your head provides you with a framework on which to hang more knowledge. 
 
-The thing about information is that once you have acquired it you can build on it. Every little bit of knowledge you put into your head provides you with a framework on which to hang more knowledge. The journey of a thousand miles begins with a single step. Other profound sounding metaphors that convince you of the wisdom of my advice!
-
-We’re essentially iterating this procedure over and over again. “What can I do? Oh, there’s a thing. Lets do that. Done. What can I do now? Oh, hey, there’s another thing which I couldn’t previously have done but now can because I’ve learned stuff from the last thing I did”. By acquiring our knowledge in little bite sized chunks we’ve rapidly consumed an entire information meal.
+We’re essentially iterating a procedure of learn, do, learn. Each time we do something, we learn, and that expands the set of things we can do next. By acquiring our knowledge incrementally, we rapidly build up to an amount that would have seemed overwhelming at the outset, and become able to do things that if we'd tried to tackle immediately we'd just have floundered with.
 
 As well as interleaving getting things done with learning things, I think the quality of education you get this way is better than what you would otherwise get because it contains practical experience. You don’t just learn how things work, you learn how to work with them, and you learn a lot of concrete details that might have been missing from the high level description of them.
 
-Now go back and read this section again (if you haven’t already. Don’t get stuck in an infinite loop and forget to eat and die. Because I’d feel really bad about that and it’s not an efficient way to learn at all). It’s literally the most important bit of this post and I really want you to take it on board.
-Acquire information as efficiently as possible
+## Acquire information efficiently
 
-Here is my knowledge acquisition procedure. I bequeath it to you. Use it well:
+My information acquisition process is very simple:
 
 1. Can I figure out how this works on my own? (5 minutes)
-2. Can I figure out how this works with googling and reading blog posts? (15 minutes)
+2. Can I figure out how this works with googling and reading documentation, blog posts, etc? (15 minutes)
 3. Ask someone to explain it to me (however long it takes)
 
-OK, I know I said the previous section was the most important thing in this essay, but this one is pretty important too. For the love of all, please do not sit there ineffectual and frustrated because you can’t figure out what’s going on. It’s nice that you don’t want to bother your colleagues, and the first 20 minutes or so of trying to figure things out on your own is important as a way of preventing you from doing that too much, but your colleagues need you to be useful. They also probably possess the exact information you need. It is their responsibility and to their benefit to help you out when you get stuck.
-Use the information you acquire as effectively as possible
+The third step is very important. Being stuck is not helping anyone, and your colleagues want you to succeed. Asking for help benefits everyone.
 
-This is a fuzzy one. It’s basically “Be good at thinking”. If there were a fool proof set of advice on how to do this the world would look very different than it currently does. Still, here are some ideas you might find useful.
+The first two steps are important too: As well as being respectful of other peoples' time (it's perfectly OK to <em>use</em> other peoples' time, but it's bad to <em>waste</em> it), trying to figure it out yourself first improves your learning in the long run and gives you a better basis on which to explain your problem to people.
 
-Here is roughly what my thinking procedure looks like. Or, more accurately, here is my inaccurate model of what my thinking procedure looks like that I currently use to make predictions but don’t really expect corresponds that exactly to reality.
+## Use the information you acquire well
 
-Err. That paragraph might be a bit of a clue as to what I’m about to say.
-
-If I may get all meta for a moment: What is the purpose of knowledge acquisition?
-
-I mean, sure, you want to get stuff done, but how does knowledge help you do that?
-
-To me the value of knowledge is essentially predictive. You want to be able to answer two questions:
+For the purposes of becoming effective, the value of knowledge is essentially predictive. You want to be able to answer two questions:
 
 1. If I do X, what will happen?
 2. If I want Y to happen, what should I do?
@@ -78,7 +64,7 @@ At its basic it’s two words. “Mental models”
 
 A mental model is essentially an algorithm you can run in your brain that lets you put in actions as inputs and get outcomes as outputs.
 
-They can be implicit or explicit (note: This is my terminology and is probably non-standard): An implicit mental model is essentially one that you can run without going through all the steps. You don’t need to be able to describe the model explicitly, you just know the answer. Essentially what most people mean when they say something is intuitive is “I have an implicit mental model for how this works”. You’re essentially pretty comfortable working with anything you have an implicit mental model for and can probably get things done with it pretty readily.
+They can be implicit or explicit: An implicit mental model is essentially one that you can run without going through all the steps. You don’t need to be able to describe the model explicitly, you just know the answer. Essentially what most people mean when they say something is intuitive is “I have an implicit mental model for how this works”. You’re essentially pretty comfortable working with anything you have an implicit mental model for and can probably get things done with it pretty readily.
 
 Explicit mental models are more work. You have to think through the steps linearly and laboriously in order to get the answer. But they’ve got a lot of benefits too:
 
@@ -86,9 +72,7 @@ Explicit mental models are more work. You have to think through the steps linear
 * They’re easy to fix when they’re wrong. And mental models will be wrong, all the time. The chances of you always being able to perfectly predict things are basically zero. An explicit mental model you can just patch, but adjusting your intuitions is much harder.
 * You can explain your reasoning to other people. This is especially useful when you’re stuck and want to talk a problem through with someone else.
 
-So both types of mental models have costs and benefits. So which do we choose?
-
-Answer: Both!
+So both types of mental models have costs and benefits, which means we're going to end up wanting to use a mix of the two.
 
 Once you think of mental models in terms of being able to predict how things behave instead of truth about how things work you can realise that having multiple mental models of how something works is not only fine but often useful: You can cross check them against eachother to see if they make different predictions, you can use whichever is cheapest when the decision doesn’t matter very much or most accurate when it does.
 
@@ -105,38 +89,28 @@ That’s about all I’ve got on how to build mental models. Now onto question 2
 
 Here is roughly what I think of as my algorithm:
 
-Section 1:
-
 1. Generate an idea
-2. Is it obviously stupid? Throw it away and go back to 1.
-3. Is it still not obviously stupid after a little bit more thought? Set it aside
-4. How many not-obviously-stupid ideas do have I set aside? 3 or so? If so, proceed to the next section.
-5. How long have I taken over this? Too long? If so and I have any ideas set aside, go to the next section. Else, step away from the problem. Either come at it from another angle of attack or go do something else and let it simmer away in the background.
+2. What would go wrong if I did this?
+3. Can I fix that?
+4. If yes, give it a try and see what happens. Did it work?
+    1. Yes? Great! I'm done.
+    2. No? What did I miss? Did I fail to understand something? At any rate, I now know what is wrong with it. Continue onwards.
+5. Take a specific thing that is wrong with it and try to come up with an idea that doesn't have that problem.
+6. Take that idea back to step 2.
 
-Section 2:
-
-I now have a bunch of idea candidates. Put some proper thought into it and attempt to determine which amongst them is best. This may require actually trying some things out and gathering new information.
-
-Once I have determined which of these is the best, decide if I’m satisfied with it. If I’m not, start the whole process again. If I am, this is the solution I’m going to go with for now.
-
-So basically the idea is that you want to use cheap mental models to filter ideas quickly, then once you’ve got a few goodish ideas to compete against eachother you can properly explore how they work as solutions. I don’t know how accurate a description this is, but I think it’s broadly OK.
+So basically the idea is that you want to use your mental models to predict what will happen if you try something, then you try it out and either succeed or improve your mental model: Either way, progress. The key is that you refine your ideas through a process of destruction and by finding out what doesn't work.
 
 Unfortunately it’s got a big gap right at the beginning where I say “Generate an idea”. How do you do that? Just try things at random?
 
-Well, you just… do. I don’t really know. This may be where I have to fall back on my “Maybe I’m just kinda smart?” answer, but if so then sadly I’m not actually smart enough to give a good answer here. Here are some things I think that I might be doing, but it’s mostly speculation:
+It's hard to give good advice on this one other than it gets easier with experience. Here are some things that help though:
 
-1. Try and narrow the search space as much as possible. If you think you might be able to solve the problem by making changes to a specific thing, only look at ideas which change that thing. If that’s proving not to work, try a different thing. You should be able to use a mix of past experience and proximity to guide you here – think of similar problems you’ve solved in the past and look near what the solutions to those were. If you can’t think of any similar problems or those solutions don’t pan out, look nearby to the problem. The advantage of looking at a smaller area is that there are fewer things to try so you’re more likely to hit on the right one quickly.
-2. Try and narrow the problem by breaking it up into smaller pieces. When you do this it becomes much easier to narrow the search space as in the previous section. In order to do this try to find natural “cleave points” where the problem breaks neatly along specific lines.
-3. When you decide a solution is a bad idea, see if there are any general reasons why it’s a bad idea and try to avoid areas that relate to those reasons.
-4. Conversely, if an idea almost works but not quite, try exploring around it to see if there are any variations on it that work better.
-5. If you’re totally stuck, try thinking of something completely out there. It probably won’t work, but exploring why it won’t work might tell you interesting things about the problem and give you other areas that worked.
+1. The most important question is "Is this similar to a problem I've seen solved before and can I use the solution from that time?"
+2. Is there an *obviously terrible* solution that you'd be embarrassed to use? Start from there and see if you can make it not terrible. 
+3. If a problem seems too large, try to break it down.
+4. Is there a particular subproblem that you're not sure how to solve? Assume it's solved and try to figure out what the rest of the solution would be like. What did you use from that solution? Is there a simpler thing you can solve instead?
 
-I don’t think that’s sufficient. I’m afraid this might just be a case of practice makes less imperfect. I think part of why I’m “smart” is that my brain just won’t shut up (seriously. It’s annoying), so tends to gnaw at problems like a dog with a bone until they give in, which has given me a lot of practice at trying to figure things out. Really, this might be the best advice I can give you, but you’ve probably heard it so many times that it’s redundant: Practicing solving problems and figuring things out makes you better at it. Still, I think there should be things you can do above and beyond that – practice is no good if you’re practicing doing something badly. I’d love to have a firmer idea of what they were.
-
+The nice thing about the testing to destruction approach for idea generation is that there are almost no useless ideas, because you always learn more about the shape of the problem by finding what doesn't work.
+ 
 ## Fitting it all together
 
-I like to think of this as a process of exploration. You start somewhere simple (I find “actually using the product” to be a good place to start). You look around you and, step by step, you explore around you while doing whatever jobs you can find in the areas you currently have access to. Your colleagues will help you find your way, but ultimately it’s up to you to draw your own map of the territory and figure out how all the different bits connect up. Think of this post as my personal and eclectic guide to software cartography.
-
-Does it work? Beats me. Certainly I seem to be doing something right, and I really hope that this encapsulates some of it. I think it’s mostly good advice, but there’s definitely a bit of a danger that I’m cargo culting my own brain here.
-
-If you try any of this, do let me know how it goes, and please do share your own ideas in comments, email, etc. because I’d really like to know how to get better at this too.
+I like to think of this as a process of exploration. You start somewhere simple (I find “actually using the product” to be a good place to start). You look around you and, step by step, you explore around you while doing whatever jobs you can find in the areas you currently have access to. Your colleagues will help you find your way, but ultimately it’s up to you to draw your own map of the territory and figure out how all the different bits connect up. 
