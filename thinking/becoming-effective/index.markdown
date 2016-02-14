@@ -33,7 +33,7 @@ That's not to say that acquiring information is *bad*. All else being equal, mor
 
 Additionally, prioritising like this actually helps you acquire more information in the long run. The thing about information is that once you have acquired it you can build on it. Every little bit of knowledge you put into your head provides you with a framework on which to hang more knowledge. 
 
-We’re essentially iterating a procedure of learn, do, learn. Each time we do something, we learn, and that expands the set of things we can do next. By acquiring our knowledge incrementally, we rapidly build up to an amount that would have seemed overwhelming at the outset, and become able to do things that if we'd tried to tackle immediately we'd just have floundered with.
+I'm essentially iterating a procedure of learn, do, learn. Each time I do something, I learn, and that expands the set of things I can do next. By acquiring our knowledge incrementally, I rapidly build up to an amount that would have seemed overwhelming at the outset, and become able to do things that if we'd tried to tackle immediately we'd just have floundered with.
 
 As well as interleaving getting things done with learning things, I think the quality of education you get this way is better than what you would otherwise get because it contains practical experience. You don’t just learn how things work, you learn how to work with them, and you learn a lot of concrete details that might have been missing from the high level description of them.
 
