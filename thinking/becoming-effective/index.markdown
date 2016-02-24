@@ -74,13 +74,13 @@ Explicit mental models are more work. You have to think through the steps linear
 
 So both types of mental models have costs and benefits, which means we're going to end up wanting to use a mix of the two.
 
-Once you think of mental models in terms of being able to predict how things behave instead of truth about how things work you can realise that having multiple mental models of how something works is not only fine but often useful: You can cross check them against eachother to see if they make different predictions, you can use whichever is cheapest when the decision doesn’t matter very much or most accurate when it does.
+Once you think of mental models in terms of being able to predict how things behave instead of truth about how things work you can realise that having multiple mental models of how something works is not only fine but often useful: You can cross check them against each other to see if they make different predictions, you can use whichever is cheapest when the decision doesn’t matter very much or most accurate when it does.
 
-Additionally, it’s not really as cut and dried as I’m making it seem. What tends to happen is that explicit mental models turn into implicit ones. Once you’re familiar enough with an explicit mental model the ideas become intuitive and internalized and you need to consult it less and less.
+Additionally, it’s not really as cut and dried as I’m making it seem. What tends to happen is that explicit mental models turn into implicit ones. Once you’re familiar enough with an explicit mental model the ideas become intuitive and internalised and you need to consult it less and less.
 
 Here are some tips for building mental models:
 
-1. Reuse old mental models as much as possible. When learning python I started out as “Like Ruby with funny syntax”. Then I learned a bit more and replaced this with “Like Javascript with funny syntax and a decent module system”. Then I found out about descriptors and patched it as “Like Javascript with funny syntax and a decent module system, but bear in mind that the value you put into an object might not be the value you get out of it because of these magic methods”.
+1. Reuse old mental models as much as possible. When learning python I started out as “Like Ruby with funny syntax”. Then I learned a bit more and replaced this with “Like JavaScript with funny syntax and a decent module system”. Then I found out about descriptors and patched it as “Like JavaScript with funny syntax and a decent module system, but bear in mind that the value you put into an object might not be the value you get out of it because of these magic methods”.
 2. In general, build mental models as cheaply as possible. A mental model that you can build quickly is probably much more useful than a laboriously constructed one, because you’ll be likely to resist changing the latter.
 3. Patch your mental models when they make wrong predictions
 4. Test your mental models constantly. This is useful a) Because it leads to finding out when you need to patch them and b) Because it greatly hastens the process of turning them into implicit mental models, which makes you more able to readily apply them in future.
@@ -94,7 +94,7 @@ Here is roughly what I think of as my algorithm:
 3. Can I fix that?
 4. If yes, give it a try and see what happens. Did it work?
     1. Yes? Great! I'm done.
-    2. No? What did I miss? Did I fail to understand something? At any rate, I now know what is wrong with it. Continue onwards.
+    2. No? What did I miss? Did I fail to understand something? At any rate, I now know what is wrong with it. Continue onward.
 5. Take a specific thing that is wrong with it and try to come up with an idea that doesn't have that problem.
 6. Take that idea back to step 2.
 
@@ -107,7 +107,7 @@ It's hard to give good advice on this one other than it gets easier with experie
 1. The most important question is "Is this similar to a problem I've seen solved before and can I use the solution from that time?"
 2. Is there an *obviously terrible* solution that you'd be embarrassed to use? Start from there and see if you can make it not terrible. 
 3. If a problem seems too large, try to break it down.
-4. Is there a particular subproblem that you're not sure how to solve? Assume it's solved and try to figure out what the rest of the solution would be like. What did you use from that solution? Is there a simpler thing you can solve instead?
+4. Is there a particular sub-problem that you're not sure how to solve? Assume it's solved and try to figure out what the rest of the solution would be like. What did you use from that solution? Is there a simpler thing you can solve instead?
 
 The nice thing about the testing to destruction approach for idea generation is that there are almost no useless ideas, because you always learn more about the shape of the problem by finding what doesn't work.
  
