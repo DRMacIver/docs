@@ -11,7 +11,7 @@ excerpt: My pancake recipe
 * 1/2 tsp baking soda
 * 1/2 tsp cream of tartar
 * 1/2 tsp salt
-* 1/4 cup of yoghurt
+* 1/4 cup of yogurt
 * 1/4 cup of milk.
 * 1 egg
 * 1 tsp vegetable oil

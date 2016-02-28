@@ -38,4 +38,4 @@ Additional notes:
    a lot at preventing this.
 4. Don't be afraid to use quite a lot of strength. Cats are robust.
 5. Your cat isn't actually going to hate you for this, at least not for more than
-   about 10 mimnutes.
+   about 10 minutes.

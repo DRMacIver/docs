@@ -72,7 +72,7 @@ I have three main techniques here:
   * Scalp massage: This is much easier if you’re not me and still have hair. Grab thick bunches of it near the roots and use it to move your scalp about. Similar to the temple rub, do it with both hands at once, rotating from front to back. I usually do this once on top and once at the back of my skull near the top. If, like me, you lack hair, you can do something similar by using the base of your hands, pressing firmly into the skin and using friction to move the scalp.
   * Massage the side of the spine from the base of the necks to where it joins your spine. Do this by placing the tips of your fingers there, digging in and pulling outwards. Then move up slightly and repeat the process until you run out of spine.
 
-You can also do neck streches by slowly rotating your head through a head shake as far as it can go in each direction, and also by bending your neck from side to side.
+You can also do neck stretches by slowly rotating your head through a head shake as far as it can go in each direction, and also by bending your neck from side to side.
 
 These don’t always help, and they don’t usually completely get rid of a tension headache for me, but they often reduce it to a level where a previously intolerable headache becomes tolerable and much more manageable with painkillers.
 
